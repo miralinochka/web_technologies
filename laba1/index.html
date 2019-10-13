@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lab 1</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+  <h2>Please fill in this form to count how much alcohol you need to turn the "supercoder" mode ON</h2>
+  <img src="https://media.giphy.com/media/UFGj6EYw5JhMQ/giphy.gif" loading="lazy"/>
+  <form id="form">
+    <div class="form-group">
+      <div class="col-3">
+        <label for="bodyWeight">Enter your body weight</label>
+        <input
+          type="number"
+          class="form-control"
+          id="bodyWeight"
+          placeholder="50"
+          required
+        />
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+        <label class="form-check-label" for="female">Female</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+        <label class="form-check-label" for="male">Male</label>
+      </div>
+      <button type="submit" class="btn btn-primary" onclick="calculateAmountOfAlcohol(event)">Submit</button>
+    </div>
+  </form>
+  <div>
+    <div id="results"></div>
+  </div>
+</form>
+</body>
+</html>
