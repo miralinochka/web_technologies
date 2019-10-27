@@ -4,40 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lab 1</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="../main-style.css">
+  <title>ballmer peak</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
   <script src="script.js"></script>
 </head>
 <body>
-  <div class="container">
-  <h2>Please fill in this form to count how much alcohol you need to turn the "supercoder" mode ON</h2>
-  <img src="https://media.giphy.com/media/UFGj6EYw5JhMQ/giphy.gif" loading="lazy"/>
-  <form id="form">
-    <div class="form-group">
-      <div class="col-3">
-        <label for="bodyWeight">Enter your body weight</label>
-        <input
-          type="number"
-          class="form-control"
-          id="bodyWeight"
-          placeholder="50"
-          required
-        />
+    <div class="wrapper">
+        <div class="left-block">
+          <img src="../images/coder.webp" loading="lazy"/>
+        </div>
+        <div class="main">
+          <div class="form">
+            <h1>fill in this form to count how much alcohol you need to turn the "supercoder" mode ON</h1>
+            <form id="form" onsubmit="calculateAmountOfAlcohol(event)">
+                <div>
+                  <div class="form-group">
+                    <label for="bodyWeight">enter your body weight</label>
+                    <input
+                      type="number"
+                      id="bodyWeight"
+                      placeholder="50"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input type="radio" name="gender" id="female" value="female" checked>
+                    <label for="female">female</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">male</label>
+                  </div>
+                  <button type="submit" class="btn-submit">let's code!</button>
+                </div>
+              </form>
+              <div>
+                <div id="results"></div>
+              </div>
+            </form>
+          </div>
+          <footer>
+            <h3>developed by Alina Mironchik</h3>
+          </footer>
+        </div>
       </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="gender" id="female" value="female" checked>
-        <label class="form-check-label" for="female">Female</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
-        <label class="form-check-label" for="male">Male</label>
-      </div>
-      <button type="submit" class="btn btn-primary" onclick="calculateAmountOfAlcohol(event)">Submit</button>
-    </div>
-  </form>
-  <div>
-    <div id="results"></div>
-  </div>
-</form>
 </body>
 </html>

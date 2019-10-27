@@ -1,0 +1,104 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  color: #0c0c11;
+}
+body {
+  width: 100%;
+  height: 100vh
+}
+.wrapper {
+  display: flex;
+  height: 100%;
+}
+.left-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.image {
+  background-image: url("./images/main-bg.jpg");
+}
+.image p {
+  color: #fff;
+  font-size: 60px;
+}
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
+}
+main {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+.nav ul li {
+  padding: 5px;
+  display: block;
+}
+.nav a {
+  color: #3a3b3f;
+  display: block;
+  opacity: .8;
+}
+footer h3 {
+  color: #3a3b3f;
+  padding-left: 10px;
+  font-weight: 200;
+}
+a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+.btn-submit {
+  padding: 8px;
+  font-size: 16px;
+  background-color: #377765;
+  color: #fff;
+  opacity: .8;
+  border-radius: 5px;
+}
+.btn-submit:hover {
+  opacity: 1;
+}
+input {
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid #377765;
+  padding: 5px;
+}
+.form-group {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+#bodyWeight {
+  margin-left: 10px;
+}
+.form {
+  margin-right: 50px;
+}

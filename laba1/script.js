@@ -9,15 +9,15 @@ function calculateAmountOfAlcohol (event) {
 
   const alcoholConcentrations = [
     {
-      name: 'Vodka (40%)',
+      name: 'vodka (40%)',
       concentration: 0.40
     },
     {
-      name: 'Vine (12%)',
+      name: 'vine (12%)',
       concentration: 0.12
     },
     {
-      name: 'Beer (5%)',
+      name: 'beer (5%)',
       concentration: 0.05
     },
   ];
@@ -28,10 +28,10 @@ function calculateAmountOfAlcohol (event) {
     const amountOfAlcohol = Math.round(amountOfSpirt / alcohol.concentration);
   
     return acc + `<p>${alcohol.name}: ${amountOfAlcohol} ml</p>`;
-  }, `<p>Raw spirt: ${amountOfSpirt} ml</p>`);
+  }, `<p>raw spirt: ${amountOfSpirt} ml</p>`);
 
   const div = document.querySelector('#results');
-  const resultText = '<h3>To reach Ballmer Peak you need:</h3>'
+  const resultText = '<h3>to reach ballmer peak you need:</h3>'
 
   div.innerHTML = resultText + result;
 
