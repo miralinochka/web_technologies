@@ -102,3 +102,6 @@ input {
 .form {
   margin-right: 50px;
 }
+img {
+  max-width: 409px;
+}
