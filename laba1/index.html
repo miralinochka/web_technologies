@@ -12,44 +12,44 @@
   <script src="script.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="left-block">
-          <img src="../images/coder.webp" loading="lazy"/>
-        </div>
-        <div class="main">
-          <div class="form">
-            <h1>fill in this form to count how much alcohol you need to turn the "supercoder" mode ON</h1>
-            <form id="form" onsubmit="calculateAmountOfAlcohol(event)">
-                <div>
-                  <div class="form-group">
-                    <label for="bodyWeight">enter your body weight</label>
-                    <input
-                      type="number"
-                      id="bodyWeight"
-                      placeholder="50"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input type="radio" name="gender" id="female" value="female" checked>
-                    <label for="female">female</label>
-                  </div>
-                  <div class="form-group">
-                    <input type="radio" name="gender" id="male" value="male">
-                    <label for="male">male</label>
-                  </div>
-                  <button type="submit" class="btn-submit">let's code!</button>
-                </div>
-              </form>
-              <div>
-                <div id="results"></div>
+  <div class="wrapper">
+    <div class="left-block">
+      <img src="../images/coder.webp" loading="lazy"/>
+    </div>
+    <div class="main">
+      <div class="form">
+        <h1>fill in this form to count how much alcohol you need to turn the "supercoder" mode ON</h1>
+        <form id="form" onsubmit="calculateAmountOfAlcohol(event)">
+            <div>
+              <div class="form-group">
+                <label for="bodyWeight">enter your body weight</label>
+                <input
+                  type="number"
+                  id="bodyWeight"
+                  placeholder="50"
+                  required
+                />
               </div>
-            </form>
+              <div class="form-group">
+                <input type="radio" name="gender" id="female" value="female" checked>
+                <label for="female">female</label>
+              </div>
+              <div class="form-group">
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">male</label>
+              </div>
+              <button type="submit" class="btn-submit">let's code!</button>
+            </div>
+          </form>
+          <div>
+            <div id="results"></div>
           </div>
-          <footer>
-            <h3>developed by Alina Mironchik</h3>
-          </footer>
-        </div>
+        </form>
       </div>
+    </div>
+  </div>
+  <footer class="fixed">
+    <h3 class="footer-text">developed by Alina Mironchik</h3>
+  </footer>
 </body>
 </html>
