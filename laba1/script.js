@@ -1,3 +1,14 @@
+const coderImg = new Image();
+coderImg.src = "../images/coder.gif";
+
+coderImg.onload = function() {
+  console.log("coderImg ready to append");
+  const leftBlock = document.getElementById('left');
+  const loader = document.getElementById('loader');
+  loader.className = '';
+
+  leftBlock.append(coderImg);
+};
 
 function calculateAmountOfAlcohol (event) {
   event.preventDefault();
