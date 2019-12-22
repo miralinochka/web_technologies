@@ -1,0 +1,10 @@
+textarea {
+  width: 100%;
+}
+h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+p {
+  word-break: break-all;
+}
