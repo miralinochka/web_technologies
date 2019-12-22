@@ -4,7 +4,8 @@ const apiConstants = {
   decrypt: '/rsa/decrypt',
 };
 
-const baseApiUrl = 'http://localhost:8000';
+// const baseApiUrl = 'http://localhost:8000';
+const baseApiUrl = 'https://quiet-bayou-95682.herokuapp.com';
 
   const encode = event => {
     event.preventDefault();
