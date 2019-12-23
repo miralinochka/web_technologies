@@ -2,7 +2,7 @@ const currencyImg = new Image();
 currencyImg.src = "../images/currency.jpg";
 
 $(function() {  
-  $('#datePicker').max = new Date().toISOString().split("T")[0];
+  $('#datePicker').attr('max', new Date().toISOString().split("T")[0]);
   $('.loader').removeClass('loader');
 
   $('#left').append(currencyImg);
