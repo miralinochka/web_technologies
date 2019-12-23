@@ -32,6 +32,6 @@ const getCurrenciesByDate = event => {
       resultDiv.innerHTML = result.join('');
     }
   };
-  xhttp.open("GET", `http://www.nbrb.by/api/exrates/rates?ondate=${date}&periodicity=0`, true);
+  xhttp.open("GET", `https://www.nbrb.by/api/exrates/rates?ondate=${date}&periodicity=0`, true);
   xhttp.send();
 }
