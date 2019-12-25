@@ -1,0 +1,7 @@
+input {
+  margin-bottom: 20px;
+}
+.hint {
+  text-decoration: underline;
+  color: #b72c2c;
+}
