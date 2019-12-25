@@ -1,0 +1,21 @@
+.flex-container {
+  justify-content: space-around;
+  margin: 40px;
+  height: 50vh;
+  align-items: flex-start;
+}
+.flex-container p {
+  border-left: 3px dashed #d694da;
+  background-color: #882c8a;
+  opacity: .8;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+}
+.flex-container p:hover {
+  opacity: 1;
+}
+.flex-container p:nth-child(2n) {
+  align-self: flex-end;
+}

@@ -1,0 +1,15 @@
+.flex-container {
+  flex-direction: column;
+  align-items: center;
+}
+.flex-container > p {
+  background-color:#4e86a7;
+  line-height: 50px;
+  width: 50px;
+  text-align: center;
+  color: #fff;
+}
+.flex-container p:last-child {
+  border: 3px dashed #b72c2c;
+  background-color: #519183;
+}
